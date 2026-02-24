@@ -1,26 +1,26 @@
 class Cx < Formula
   desc "AI-powered development platform with task management, semantic memory, and agent orchestration"
   homepage "https://github.com/jsvitolo/cortex-releases"
-  version "0.1.24"
+  version "0.1.25"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.24/cx_0.1.24_darwin_arm64.tar.gz"
-      sha256 "5de5b26ada7aaa94d31f7042f72dc5a7f4b9ef2aaab3e28d68042b490aeb5ab7"
+      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.25/cx_0.1.25_darwin_arm64.tar.gz"
+      sha256 "73f4d46a28d0df979e3461b6d232e6f2887347fa557753ed8490ff236f82d6f4"
     else
-      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.24/cx_0.1.24_darwin_amd64.tar.gz"
-      sha256 "1564fbb375a0bbd3c912475024e8f1cc61c299bb76d5f2d006f2165b2460e292"
+      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.25/cx_0.1.25_darwin_amd64.tar.gz"
+      sha256 "e7c9d49f8b5b731802ebfd3c043e54d03230a43cf10b3a92c9ec8a39c95fee54"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.24/cx_0.1.24_linux_arm64.tar.gz"
-      sha256 "9a0d5e5befbe2ecd08dae48fbbcadce075aa36a5b4a8e50a21baabb2ef067ca0"
+      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.25/cx_0.1.25_linux_arm64.tar.gz"
+      sha256 "92c45518fccb72f5d57f1a244b942c7010fae852fab467aa015757b5cc6b3c8c"
     else
-      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.24/cx_0.1.24_linux_amd64.tar.gz"
-      sha256 "b0a024b2ff08271bfc5d1776e03323fd8a2156b04dca10582ad1a080a14ae244"
+      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.25/cx_0.1.25_linux_amd64.tar.gz"
+      sha256 "48725abb6949c8f3859ce3f7b5681ea0c20fbd6aeaddc37ed7f512cb74e662d3"
     end
   end
 
