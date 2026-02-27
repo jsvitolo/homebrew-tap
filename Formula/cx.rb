@@ -1,26 +1,26 @@
 class Cx < Formula
   desc "AI-powered development platform with task management, semantic memory, and agent orchestration"
   homepage "https://github.com/jsvitolo/cortex-releases"
-  version "0.1.28"
+  version "0.1.29"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.28/cx_0.1.28_darwin_arm64.tar.gz"
-      sha256 "720bfd7365a576f0ceea61168583d3c12fc6c0b57f50013c6cd7f2171b804936"
+      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.29/cx_0.1.29_darwin_arm64.tar.gz"
+      sha256 "b02558fcf3c71aa3475ad849dc6514297c139184e095e2f42c088f5d001e1eeb"
     else
-      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.28/cx_0.1.28_darwin_amd64.tar.gz"
-      sha256 "56e4dc7a364e8f092b66e407db4bac4d1a17541ff62a836f08be3fd3a62d8484"
+      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.29/cx_0.1.29_darwin_amd64.tar.gz"
+      sha256 "dd3b1558394eaa791ff80d2c2b162ca5efcca3d33d6dd6b2cb12c46463e4e26a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.28/cx_0.1.28_linux_arm64.tar.gz"
-      sha256 "86fa656861ecd2eeb12ac3958407eddf85baf32f0f7da593ea50fb9425bc524f"
+      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.29/cx_0.1.29_linux_arm64.tar.gz"
+      sha256 "6312efef6a008e6d220976ee6409bb4ac4f3b8b2e582800885f3b0d3183a351c"
     else
-      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.28/cx_0.1.28_linux_amd64.tar.gz"
-      sha256 "1cde521eb2d08e6e57cfa0d54ce0431c7216a3172b7b1e29376644b4eaad2439"
+      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.29/cx_0.1.29_linux_amd64.tar.gz"
+      sha256 "1ded194db90d9f375686ec723209ecf8c3f040e7c46cf3f9e3fd6641eefb311f"
     end
   end
 
@@ -29,6 +29,6 @@ class Cx < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/cx --version")
+    system "\#{bin}/cx", "--version"
   end
 end
