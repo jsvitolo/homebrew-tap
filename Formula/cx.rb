@@ -1,16 +1,16 @@
 class Cx < Formula
   desc "AI-powered development platform with task management, semantic memory, and agent orchestration"
   homepage "https://github.com/jsvitolo/cortex-releases"
-  version "0.1.34"
+  version "0.1.35"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.34/cx_darwin_arm64.tar.gz"
-      sha256 "1b7ffd09ffcc153d255dc501d09117fa1ef1579ca3c9eb6e0ae7d5ce1d8c9602"
+      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.35/cx_darwin_arm64.tar.gz"
+      sha256 "c341d498d337ff051a17483cdf8bdd92d7e36a7ff993f76e02f45d078b21b750"
     else
-      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.34/cx_darwin_amd64.tar.gz"
-      sha256 "9b40ecb59cca9fac3f8dc397d5ec378a2109e4ce09bce11f834b0ec1ddb18ef8"
+      url "https://github.com/jsvitolo/cortex-releases/releases/download/v0.1.35/cx_darwin_amd64.tar.gz"
+      sha256 "70710e5bda7afe333adef45f3021b95e758f16389c7728df34f51a9076438533"
     end
   end
 
